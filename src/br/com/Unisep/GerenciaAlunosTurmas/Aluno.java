@@ -10,7 +10,7 @@ public class Aluno {
     private float notaG2;
     private Turma turma;
     
-    Aluno (int ra , String nome){
+    public Aluno (int ra , String nome){
         this.ra = ra;
         this.nome = nome;
     }
@@ -54,13 +54,22 @@ public class Aluno {
     public void setTurma(Turma turma) {
         this.turma = turma;
     }
-    protected float  Media (){
+    public  float  getMedia (){
        return (notaG1+(notaG2*2))/3;      
    }
-   public float getMedia (){
-       return Media ();
-   }
+   
 }
+
+/*Aluno	
+- RA	
+- Nome	
+- NotaG1	
+- NotaG2	
+- Turma	
+* Aluno ( RA, Nome )	construtor
+= Get/Set   metodo
+= media() metodo
+* */
 //for normal ou usando for it
 //na lista de alunos 
 //f1 :for (int x = 0; x<Lista.size();x++;){

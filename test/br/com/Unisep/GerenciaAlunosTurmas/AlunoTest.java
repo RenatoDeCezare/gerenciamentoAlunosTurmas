@@ -1,7 +1,7 @@
 package br.com.Unisep.GerenciaAlunosTurmas;
-import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;
+import org.junit.Test;
 
 
 public class AlunoTest {
@@ -18,6 +18,7 @@ public class AlunoTest {
         assertEquals(7, al.getMedia(), 0);
         
     }     
+    
     @Test 
     public void nomeNullo(){
         assertEquals(" ", al.getNome());
