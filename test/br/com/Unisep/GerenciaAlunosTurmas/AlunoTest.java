@@ -5,11 +5,11 @@ import org.junit.Test;
 
 
 public class AlunoTest {
-    Aluno al;
+    aluno al;
     
     @Before
     public void init(){
-        al = new Aluno (1,"");
+        al = new aluno (1,"");
         al.setNotaG1 (1);
         al.setNotaG2 (10);
     }
@@ -19,11 +19,11 @@ public class AlunoTest {
         
     }     
     
-    @Test 
+    /*@Test 
     public void nomeNullo(){
         assertEquals(" ", al.getNome());
         assertEquals(1, al.getRa());
     }
-   
+   */
 }
 //github.com cadastrar lá

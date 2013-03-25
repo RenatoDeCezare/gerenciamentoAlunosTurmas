@@ -2,7 +2,7 @@ package br.com.Unisep.GerenciaAlunosTurmas;
 import java.util.ArrayList;
 
 public class Turma {
-    private ArrayList <Aluno> alunos = new ArrayList<Aluno>();
+    private ArrayList <aluno> alunos = new ArrayList<aluno>();
     private int cod;
     private String descricao;
     
@@ -11,12 +11,12 @@ public class Turma {
         this.descricao = descricao;
     }
     
-    public void matricula(Aluno al){
+    public void matricula(aluno al){
         alunos.add(al);
         al.setTurma(this);
     }
     
-    public void cancelaMatricula(Aluno al){
+    public void cancelaMatricula(aluno al){
         alunos.remove(al);
     }
     
